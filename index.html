@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five Nights at Freddy's</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #080808;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            color: #999;
+            margin-bottom: 35px;
+        }
+
+        .jogos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .jogo {
+            background: #111;
+            border: 1px solid #292929;
+            border-radius: 12px;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .jogo:hover {
+            transform: translateY(-5px);
+            border-color: #666;
+        }
+
+        .jogo img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 15px;
+            border-radius: 12px;
+        }
+
+        .jogo h2 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .jogo p {
+            font-size: 13px;
+            color: #888;
+        }
+
+        @media (max-width: 800px) {
+            .jogos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .jogos {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>FIVE NIGHTS AT FREDDY'S</h1>
+        <p class="subtitulo">Selecione um jogo</p>
+
+        <section class="jogos">
+
+            <a class="jogo" href="1/index.html">
+                <img src="1/favicon.ico" alt="FNAF 1">
+                <h2>FNAF 1</h2>
+                <p>Five Nights at Freddy's</p>
+            </a>
+
+            <a class="jogo" href="2/index.html">
+                <img src="2/favicon.ico" alt="FNAF 2">
+                <h2>FNAF 2</h2>
+                <p>Five Nights at Freddy's 2</p>
+            </a>
+
+            <a class="jogo" href="3/index.html">
+                <img src="3/favicon.ico" alt="FNAF 3">
+                <h2>FNAF 3</h2>
+                <p>Five Nights at Freddy's 3</p>
+            </a>
+
+            <a class="jogo" href="4/index.html">
+                <img src="4/favicon.ico" alt="FNAF 4">
+                <h2>FNAF 4</h2>
+                <p>Five Nights at Freddy's 4</p>
+            </a>
+
+            <a class="jogo" href="w/index.html">
+                <img src="w/favicon.ico" alt="FNAF World">
+                <h2>FNAF World</h2>
+                <p>FNAF World</p>
+            </a>
+
+            <a class="jogo" href="sl/index.html">
+                <img src="sl/favicon.ico" alt="Sister Location">
+                <h2>Sister Location</h2>
+                <p>Five Nights at Freddy's: SL</p>
+            </a>
+
+            <a class="jogo" href="ps/index.html">
+                <img src="ps/favicon.ico" alt="Pizzeria Simulator">
+                <h2>Pizzeria Simulator</h2>
+                <p>Freddy Fazbear's Pizzeria Simulator</p>
+            </a>
+
+            <a class="jogo" href="ucn/index.html">
+                <img src="ucn/favicon.ico" alt="UCN">
+                <h2>FNAF UCN</h2>
+                <p>Ultimate Custom Night</p>
+            </a>
+
+        </section>
+    </main>
+
+</body>
+</html>
